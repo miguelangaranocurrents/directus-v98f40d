@@ -419,6 +419,8 @@ function isExistingField(node: Record<string, any>): boolean {
 	display: flex;
 	align-items: center;
 	inline-size: fit-content;
+	/* keep the absolutely positioned delete button inside the visible area for long values */
+	max-inline-size: calc(100% - 1.75rem);
 	margin-inline-end: 1rem;
 	margin-block-end: 0.4375rem;
 	padding: 0.125rem 0.3125rem;
